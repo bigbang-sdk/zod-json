@@ -1,5 +1,5 @@
 {
-  "name": "zod-json",
+  "name": "@bigbang-sdk/zod-json",
   "module": "index.ts",
   "type": "module",
   "main": "dist/index.js",

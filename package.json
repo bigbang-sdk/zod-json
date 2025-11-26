@@ -1,0 +1,24 @@
+{
+  "name": "zod-json",
+  "module": "index.ts",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src --format esm --dts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.5.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@alcyone-labs/zod-to-json-schema": "^4.0.10",
+    "json-schema-to-zod": "^2.7.0",
+    "zod": "^4.1.13"
+  }
+}

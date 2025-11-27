@@ -10,7 +10,7 @@ export interface ZodToJsonSchemaOptions {
   name?: string;
 }
 
-function zodToJson(zodSchema: ZodType, options?: ZodToJsonSchemaOptions): any {
+function zodToJson(zodSchema: ZodType, options?: ZodToJsonSchemaOptions): JsonSchema {
   if (!zodSchema || typeof zodSchema.parse !== "function") {
     throw new Error("Invalid Zod schema: schema must have a parse function");
   }

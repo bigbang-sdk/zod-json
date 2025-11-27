@@ -1,5 +1,22 @@
 {
   "name": "@bigbang-sdk/zod-json",
+  "description": "A library for converting Zod schemas to JSON schemas and vice versa",
+  "homepage": "https://github.com/bigbang-sdk/zod-json",
+  "keywords": [
+    "zod",
+    "json",
+    "schema",
+    "typescript",
+    "javascript",
+    "js",
+    "ts"
+  ],
+  "author": "Bigbang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigbang-sdk/zod-json.git"
+  },
   "module": "index.ts",
   "type": "module",
   "main": "dist/index.js",
@@ -10,8 +27,7 @@
     "build": "rm -rf dist && tsc -p tsconfig.json"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "tsup": "^8.5.1"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"

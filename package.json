@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src --format esm --dts"
+    "build": "rm -rf dist && tsup"
   },
   "devDependencies": {
     "@types/bun": "latest",

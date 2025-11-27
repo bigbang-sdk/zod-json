@@ -2,6 +2,8 @@ import { z, ZodType } from "zod";
 import { zodToJsonSchema as zodToJsonSchemaLib } from "@alcyone-labs/zod-to-json-schema";
 import { jsonSchemaToZod as jsonSchemaToZodLib } from "json-schema-to-zod";
 
+export type JsonSchema = ReturnType<typeof zodToJsonSchemaLib>;
+
 export interface ZodToJsonSchemaOptions {
   target?: "jsonSchema7" | "openApi3";
   $refStrategy?: "none" | "root" | "relative";
